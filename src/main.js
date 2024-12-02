@@ -28,7 +28,7 @@ planetsData.forEach((body) => {
   const sphere = new THREE.Mesh(
     new THREE.SphereGeometry(body.radius, 32, 32),
     new THREE.MeshStandardMaterial({ 
-      map: new THREE.TextureLoader().load(`./assets/${body.name}_texture.jpg`) 
+      map: new THREE.TextureLoader().load(`/solar-system/assets/${body.name}_texture.jpg`) 
     })
   );
   
@@ -40,7 +40,7 @@ planetsData.forEach((body) => {
 const sun = new THREE.Mesh(
   new THREE.SphereGeometry(5, 32, 32),
   new THREE.MeshBasicMaterial({ 
-    map: new THREE.TextureLoader().load('./assets/sun_texture.jpg') 
+    map: new THREE.TextureLoader().load('/solar-system/assets/sun_texture.jpg') 
   })
 );
 
